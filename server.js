@@ -43,12 +43,12 @@ app.get('/api/users/new', (req, res) => {
     console.log("User API has been called");
 });
 
-app.post('/api/companies/new', (req, res) => {
+app.get('/api/companies/new', (req, res) => {
     res.json(new Companies());
     console.log("Companies API has been called");
 });
 
-app.put('/api/company/new', (req, res) => {
+app.get('/api/company/new', (req, res) => {
     res.json(new Company());
     console.log("Company API has been called");
 });
