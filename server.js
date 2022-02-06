@@ -48,7 +48,7 @@ app.get('/api/companies/new', (req, res) => {
     console.log("Companies API has been called");
 });
 
-app.get('/api/company/new', (req, res) => {
+app.get('/api/user/company', (req, res) => {
     res.json(new Company());
     console.log("Company API has been called");
 });
