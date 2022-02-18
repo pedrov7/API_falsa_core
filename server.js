@@ -5,6 +5,7 @@ const port = 8000;
 const { faker } = require('@faker-js/faker');
 // const fs = require('fs');
 
+
 class User {
     constructor() {
         this.firstName = faker.name.firstName();
@@ -49,7 +50,10 @@ app.get('/api/companies/new', (req, res) => {
 });
 
 app.get('/api/user/company', (req, res) => {
-    res.json(new Company());
+    res.json({
+        user: new User(),
+        company:new Companies()
+    });
     console.log("Company API has been called");
 });
 
